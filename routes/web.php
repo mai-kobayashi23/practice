@@ -12,10 +12,14 @@
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/test', function () {
+    return view('test');
 });
 
-Route::resource('test', 'TestController');
+// Route::resource('test', 'TestController');
 
-Route::get('/test', 'TestController@index')->name('test');
+// Route::get('/test', 'TestController@index')->name('test');
